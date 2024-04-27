@@ -8,12 +8,13 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "pod-install": "cd ios && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install"
+    "pod-install": "cd ios && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install",
+    "reset": "rm -rf $TMPDIR/react-* && rm -rf $TMPDIR/metro-* && watchman watch-del-all && rm -rf node_modules && yarn cache clean && rm -rf ios/build && rm -rf ios/Pods && pod cache clean --all && rm -rf ~/.cocoapods && rm -rf android/build && cd android && ./gradlew clean"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.42.4",
     "react": "18.2.0",
-    "react-native": "0.73.6",
+    "react-native": "0.74.0",
     "react-native-config": "^1.5.1",
     "react-native-url-polyfill": "^2.0.0"
   },
@@ -21,10 +22,10 @@
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",
     "@babel/runtime": "^7.20.0",
-    "@react-native/babel-preset": "0.73.21",
-    "@react-native/eslint-config": "0.73.2",
-    "@react-native/metro-config": "0.73.5",
-    "@react-native/typescript-config": "0.73.1",
+    "@react-native/babel-preset": "0.74.81",
+    "@react-native/eslint-config": "0.74.81",
+    "@react-native/metro-config": "0.74.81",
+    "@react-native/typescript-config": "0.74.81",
     "@types/react": "^18.2.6",
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.6.3",
