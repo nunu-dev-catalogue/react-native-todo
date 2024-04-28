@@ -1,0 +1,21 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/pretendard_medium.otf",
+      "sha1": "851d9be79c0262d81dbb1a4d5f71b7edb1fdfd7e"
+    },
+    {
+      "path": "src/assets/fonts/pretendard_regular.otf",
+      "sha1": "05bc39c6a8a5a968f75caad8296bb9ffc30321a5"
+    },
+    {
+      "path": "src/assets/fonts/pretendard_semibold.otf",
+      "sha1": "3ddab00e0d8f3e91a403d10dceea979b54949219"
+    },
+    {
+      "path": "src/assets/fonts/stretch_pro.otf",
+      "sha1": "f1bf659354f0c566fe6aaa72a8efa3cbec6b0f74"
+    }
+  ]
+}
