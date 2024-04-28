@@ -15,6 +15,7 @@ import {
 import {Colors, Header} from 'react-native/Libraries/NewAppScreen';
 import supabase from '../supabase';
 import {Tables} from '../supabase/supabase.type.ts';
+import {NavigationContainer} from '@react-navigation/native';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -40,17 +41,19 @@ function App(): React.JSX.Element {
   }, [tasks]);
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-      </ScrollView>
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView style={backgroundStyle}>
+        <StatusBar
+          barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+          backgroundColor={backgroundStyle.backgroundColor}
+        />
+        <ScrollView
+          contentInsetAdjustmentBehavior="automatic"
+          style={backgroundStyle}>
+          <Header />
+        </ScrollView>
+      </SafeAreaView>
+    </NavigationContainer>
   );
 }
 
