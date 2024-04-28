@@ -1,33 +1,19 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React, {useEffect, useState} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  useColorScheme,
-} from 'react-native';
-import {Colors, Header} from 'react-native/Libraries/NewAppScreen';
 import supabase from '../supabase';
 import {Tables} from '../supabase/supabase.type.ts';
 import {NavigationContainer} from '@react-navigation/native';
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
-import {DevToolsBubble} from "react-native-react-query-devtools";
+import {DevToolsBubble} from 'react-native-react-query-devtools';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import HomeScreen from './feature/home/screen/HomeScreen.tsx';
+import TaskRegisterScreen from './feature/register/screen/TaskRegisterScreen.tsx';
+import DetailScreen from './feature/detail/screen/DetailScreen.tsx';
 
 const queryClient = new QueryClient();
+const Stack = createNativeStackNavigator();
 
 function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-  const [tasks, setTasks] = useState<Tables<'tasks'>[]>([]);
+  const [_, setTasks] = useState<Tables<'tasks'>[]>([]);
   useEffect(() => {
     async function fetchTasks() {
       const {data} = await supabase.from('tasks').select();
@@ -40,24 +26,15 @@ function App(): React.JSX.Element {
       console.log('Tasks fetched');
     });
   }, []);
-  useEffect(() => {
-    console.log(tasks);
-  }, [tasks]);
 
   return (
     <QueryClientProvider client={queryClient}>
       <NavigationContainer>
-        <SafeAreaView style={backgroundStyle}>
-          <StatusBar
-            barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-            backgroundColor={backgroundStyle.backgroundColor}
-          />
-          <ScrollView
-            contentInsetAdjustmentBehavior="automatic"
-            style={backgroundStyle}>
-            <Header />
-          </ScrollView>
-        </SafeAreaView>
+        <Stack.Navigator>
+          <Stack.Screen name={'Home'} component={HomeScreen} />
+          <Stack.Screen name={'Register'} component={TaskRegisterScreen} />
+          <Stack.Screen name={'Detail'} component={DetailScreen} />
+        </Stack.Navigator>
       </NavigationContainer>
       <DevToolsBubble />
     </QueryClientProvider>
