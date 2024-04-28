@@ -12,7 +12,7 @@ const blue = '#5182ff';
 const skyblue = '#e2efff';
 const lightblue = '#f8fbff';
 
-export const color = {
+const color = {
   white,
   black,
   gray500,
@@ -26,3 +26,5 @@ export const color = {
   skyblue,
   lightblue,
 };
+
+export default color;
