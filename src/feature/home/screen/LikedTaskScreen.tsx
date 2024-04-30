@@ -7,7 +7,7 @@ function LikedTaskScreen(): React.JSX.Element {
   return <View style={styles.container}>{/* Your code here */}</View>;
 }
 
-const stylesheet = createStyleSheet((theme) => ({
+const stylesheet = createStyleSheet(theme => ({
   container: {
     flex: 1,
     backgroundColor: theme.colors.background,
