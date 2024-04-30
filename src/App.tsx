@@ -31,7 +31,11 @@ function App(): React.JSX.Element {
     <QueryClientProvider client={queryClient}>
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name={'Home'} component={HomeScreen} />
+          <Stack.Screen
+            name={'Home'}
+            component={HomeScreen}
+            options={{headerShown: false}}
+          />
           <Stack.Screen name={'Register'} component={TaskRegisterScreen} />
           <Stack.Screen name={'Detail'} component={DetailScreen} />
         </Stack.Navigator>
