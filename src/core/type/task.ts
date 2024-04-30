@@ -1,6 +1,6 @@
 export interface Task {
   id: number;
-  createdAt: string;
+  created_at: string;
   title: string;
   content: string;
   like: boolean;
