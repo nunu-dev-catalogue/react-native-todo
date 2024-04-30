@@ -8,8 +8,16 @@ const Tab = createBottomTabNavigator();
 function HomeScreen(): React.JSX.Element {
   return (
     <Tab.Navigator initialRouteName={'Todo'} backBehavior={'history'}>
-      <Tab.Screen name="Todo" component={TodoListScreen} />
-      <Tab.Screen name="Liked" component={LikedTaskScreen} />
+      <Tab.Screen
+        name="Todo"
+        component={TodoListScreen}
+        options={{ headerShown: false }}
+      />
+      <Tab.Screen
+        name="Liked"
+        component={LikedTaskScreen}
+        options={{ headerShown: false }}
+      />
     </Tab.Navigator>
   );
 }

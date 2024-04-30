@@ -1,7 +1,6 @@
 import React from 'react';
-import { Pressable, Text, View } from 'react-native';
+import { Pressable, Text, ToastAndroid, View } from 'react-native';
 import { createStyleSheet, useStyles } from 'react-native-unistyles';
-import { AppThemes } from '../../../core/designsystem/unistyle.ts';
 
 function TodoListScreen(): React.JSX.Element {
   const { styles } = useStyles(stylesheet);
@@ -9,7 +8,10 @@ function TodoListScreen(): React.JSX.Element {
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.title}>To-do</Text>
-        <Pressable onPress={() => {}}>
+        <Pressable
+          onPress={() => {
+            ToastAndroid.show('완료 숨기기', ToastAndroid.SHORT);
+          }}>
           <View style={styles.hide}>
             <Text style={styles.hideText}>완료 숨기기</Text>
           </View>
@@ -20,7 +22,7 @@ function TodoListScreen(): React.JSX.Element {
   );
 }
 
-const stylesheet = createStyleSheet(({ light: theme }: AppThemes) => ({
+const stylesheet = createStyleSheet(theme => ({
   container: {
     flex: 1,
     backgroundColor: theme.colors.background,
@@ -31,6 +33,7 @@ const stylesheet = createStyleSheet(({ light: theme }: AppThemes) => ({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    paddingHorizontal: 16,
   },
   title: {
     fontFamily: theme.typography.title.fontFamily,
@@ -42,6 +45,7 @@ const stylesheet = createStyleSheet(({ light: theme }: AppThemes) => ({
     backgroundColor: theme.colors.onSurface,
     paddingHorizontal: 10,
     paddingVertical: 8,
+    borderRadius: 4,
   },
   hideText: {
     fontFamily: theme.typography.bodyRegular.fontFamily,

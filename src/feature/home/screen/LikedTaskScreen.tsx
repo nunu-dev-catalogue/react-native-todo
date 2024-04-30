@@ -1,14 +1,13 @@
 import React from 'react';
 import { View } from 'react-native';
 import { createStyleSheet, useStyles } from 'react-native-unistyles';
-import { AppThemes } from '../../../core/designsystem/unistyle.ts';
 
 function LikedTaskScreen(): React.JSX.Element {
   const { styles } = useStyles(stylesheet);
   return <View style={styles.container}>{/* Your code here */}</View>;
 }
 
-const stylesheet = createStyleSheet(({ light: theme }: AppThemes) => ({
+const stylesheet = createStyleSheet((theme) => ({
   container: {
     flex: 1,
     backgroundColor: theme.colors.background,
