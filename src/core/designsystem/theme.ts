@@ -1,7 +1,32 @@
+import { TextStyle } from "react-native";
 import color from './color.ts';
 import typography from './typography.tsx';
 
-export const theme = {
+type Theme = {
+  colors: {
+    background: string;
+    onBackground: string;
+    surface: string;
+    onSurface: string;
+    primary: string;
+    surfaceContainer: string;
+    onSurface500: string;
+    onSurface400: string;
+    onSurface300: string;
+    onSurface200: string;
+    onSurface100: string;
+  };
+  typography: {
+    title: TextStyle;
+    bodySemiBold: TextStyle;
+    bodyMedium: TextStyle;
+    bodyRegular: TextStyle;
+    captionMedium: TextStyle;
+    captionRegular: TextStyle;
+  };
+};
+
+export const theme: Theme = {
   colors: {
     background: color.lightblue,
     onBackground: color.black,
