@@ -7,7 +7,6 @@ import { Task } from '../type/task.ts';
 import useFetchTasks from './useFetchTasks.ts';
 
 function useTasks() {
-  const [totalTasks, setTotalTasks] = useState<Task[]>([]);
   const [progressingTasks, setProgressingTasks] = useState<Task[]>([]);
   const [completedTasks, setCompletedTasks] = useState<Task[]>([]);
   const [likedTasks, setLikedTasks] = useState<Task[]>([]);
@@ -16,33 +15,31 @@ function useTasks() {
   const { tasks, isFetching } = useFetchTasks();
 
   useEffect(() => {
-    if (tasks) {
-      setTotalTasks(tasks);
+    if (tasks && !isEmpty(tasks)) {
+      setProgressingTasks(tasks.filter(task => !task.completed));
+      setCompletedTasks(tasks.filter(task => task.completed));
+      setLikedTasks(tasks.filter(task => task.like));
     }
-  }, [tasks]);
-
-  useEffect(() => {
-    if (!isEmpty(totalTasks)) {
-      setProgressingTasks(totalTasks.filter(task => !task.completed));
-      setCompletedTasks(totalTasks.filter(task => task.completed));
-      setLikedTasks(totalTasks.filter(task => task.like));
-    }
-  }, [totalTasks]);
+  }, [tasks, queryClient]);
 
   const { mutate: mutateLike } = useMutation({
     mutationFn: async ({ id, like }: { id: number; like: boolean }) => {
-      await supabase.from('tasks').update({ id, like });
+      try {
+        await supabase.from('tasks').update({ like }).eq('id', id);
+      } catch (error) {
+        console.error(error);
+      }
     },
     onMutate: async ({ id, like }: { id: number; like: boolean }) => {
       await queryClient.cancelQueries({ queryKey: ['tasks'] });
       const previousState = queryClient.getQueryData(['tasks']);
-      const updatedTasks = produce(totalTasks, draft => {
-        const task = draft.find(it => it.id === id);
-        if (task) {
-          task.like = like;
-        }
-      });
-      queryClient.setQueryData(['tasks'], updatedTasks);
+      if (tasks) {
+        const updatedTasks = produce(tasks, draft => {
+          const index = draft.findIndex(it => it.id === id);
+          draft[index].like = !like;
+        });
+        queryClient.setQueryData(['tasks'], updatedTasks);
+      }
       return { previousState };
     },
     onError: (error, variables, context) => {
@@ -60,18 +57,18 @@ function useTasks() {
       id: number;
       completed: boolean;
     }) => {
-      await supabase.from('tasks').update({ id, completed });
+      await supabase.from('tasks').update({ completed }).eq('id', id);
     },
     onMutate: async ({ id, completed }: { id: number; completed: boolean }) => {
       await queryClient.cancelQueries({ queryKey: ['tasks'] });
       const previousState = queryClient.getQueryData(['tasks']);
-      const updatedTasks = produce(totalTasks, draft => {
-        const task = draft.find(it => it.id === id);
-        if (task) {
-          task.completed = completed;
-        }
-      });
-      queryClient.setQueryData(['tasks'], updatedTasks);
+      if (tasks) {
+        const updatedTasks = produce(tasks, draft => {
+          const index = draft.findIndex(it => it.id === id);
+          draft[index].completed = !completed;
+        });
+        queryClient.setQueryData(['tasks'], updatedTasks);
+      }
       return { previousState };
     },
     onError: (error, variables, context) => {

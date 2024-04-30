@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import { View } from 'react-native';
 import { createStyleSheet, useStyles } from 'react-native-unistyles';
+import useTasks from '../../../core/hook/useTasks.ts';
 import Header from '../component/Header.tsx';
+import TaskList from '../component/TaskList.tsx';
 
 function TodoListScreen(): React.JSX.Element {
   const { styles } = useStyles(stylesheet);
   const [isCompletedTaskShown, setIsCompletedTaskShown] = useState(true);
+  const { progressingTasks, completedTasks, mutateLike, mutateComplete } =
+    useTasks();
 
   return (
     <View style={styles.container}>
@@ -17,7 +21,18 @@ function TodoListScreen(): React.JSX.Element {
         }}
       />
       <View style={styles.contents}>
-        <View>{/* 하는 중 */}</View>
+        <TaskList
+          title="하는 중"
+          tasks={progressingTasks}
+          onMutateComplete={mutateComplete}
+          onMutateLike={mutateLike}
+        />
+        <TaskList
+          title="완료"
+          tasks={completedTasks}
+          onMutateComplete={mutateComplete}
+          onMutateLike={mutateLike}
+        />
         <View>{/* 완료 */}</View>
       </View>
     </View>
@@ -59,6 +74,7 @@ const stylesheet = createStyleSheet(theme => ({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    paddingHorizontal: 16,
   },
 }));
 
