@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './feature/home/screen/HomeScreen.tsx';
 import TaskRegisterScreen from './feature/register/screen/TaskRegisterScreen.tsx';
 import DetailScreen from './feature/detail/screen/DetailScreen.tsx';
+import './core/designsystem/unistyle.ts';
 
 const queryClient = new QueryClient();
 const Stack = createNativeStackNavigator();
