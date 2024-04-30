@@ -1,33 +1,33 @@
-import React, { useState } from 'react';
-import { View } from 'react-native';
+import React from 'react';
+import { Pressable, Text, View, StyleSheet } from 'react-native';
 import { createStyleSheet, useStyles } from 'react-native-unistyles';
-import Header from '../component/Header.tsx';
+import color from '../../../core/designsystem/color.ts';
 
-function TodoListScreen(): React.JSX.Element {
+function Header({
+  title,
+  isCompletedTaskShown,
+  onToggleCompletedTaskVisibility,
+}: {
+  title: string;
+  isCompletedTaskShown: boolean;
+  onToggleCompletedTaskVisibility: () => void;
+}): React.JSX.Element {
   const { styles } = useStyles(stylesheet);
-  const [isCompletedTaskShown, setIsCompletedTaskShown] = useState(true);
+  const text = isCompletedTaskShown ? '완료 숨기기' : '완료 보기';
+  const backgroundColor = isCompletedTaskShown ? color.black : color.red;
   return (
-    <View style={styles.container}>
-      <Header
-        title="To-do"
-        isCompletedTaskShown={isCompletedTaskShown}
-        onToggleCompletedTaskVisibility={() => {
-          setIsCompletedTaskShown(!isCompletedTaskShown);
-        }}
-      />
-      <View style={styles.contents}>
-        <View>{/* 하는 중 */}</View>
-        <View>{/* 완료 */}</View>
-      </View>
+    <View style={styles.header}>
+      <Text style={styles.title}>{title}</Text>
+      <Pressable onPress={onToggleCompletedTaskVisibility}>
+        <View style={StyleSheet.compose(styles.hide, { backgroundColor })}>
+          <Text style={styles.hideText}>{text}</Text>
+        </View>
+      </Pressable>
     </View>
   );
 }
 
 const stylesheet = createStyleSheet(theme => ({
-  container: {
-    flex: 1,
-    backgroundColor: theme.colors.background,
-  },
   header: {
     height: 56,
     backgroundColor: theme.colors.surface,
@@ -54,11 +54,6 @@ const stylesheet = createStyleSheet(theme => ({
     lineHeight: theme.typography.bodyRegular.lineHeight,
     color: theme.colors.surface,
   },
-  contents: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
 }));
 
-export default TodoListScreen;
+export default Header;
