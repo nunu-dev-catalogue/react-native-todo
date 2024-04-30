@@ -6,6 +6,7 @@ import Header from '../component/Header.tsx';
 function TodoListScreen(): React.JSX.Element {
   const { styles } = useStyles(stylesheet);
   const [isCompletedTaskShown, setIsCompletedTaskShown] = useState(true);
+
   return (
     <View style={styles.container}>
       <Header
