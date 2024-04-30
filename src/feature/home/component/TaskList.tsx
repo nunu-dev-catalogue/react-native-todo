@@ -30,7 +30,6 @@ function TaskList({
   const { styles } = useStyles(stylesheet);
   const itemRenderer = useCallback(
     ({ item }: { item: Task }) => {
-      console.log({ item });
       return (
         <View style={styles.itemContainer}>
           <View style={styles.itemHeader}>
