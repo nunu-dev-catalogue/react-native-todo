@@ -14,20 +14,6 @@ const queryClient = new QueryClient();
 const Stack = createNativeStackNavigator();
 
 function App(): React.JSX.Element {
-  // const [_, setTasks] = useState<Tables<'tasks'>[]>([]);
-  // useEffect(() => {
-  //   async function fetchTasks() {
-  //     const {data} = await supabase.from('tasks').select();
-  //     if (data !== null) {
-  //       setTasks(data);
-  //     }
-  //   }
-  //
-  //   fetchTasks().then(() => {
-  //     console.log('Tasks fetched');
-  //   });
-  // }, []);
-
   return (
     <QueryClientProvider client={queryClient}>
       <NavigationContainer>
