@@ -1,12 +1,5 @@
-import React, { useCallback, useRef } from 'react';
-import {
-  FlatList,
-  LayoutAnimation,
-  Text,
-  TouchableHighlight,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import React, { useCallback } from 'react';
+import { Text, TouchableHighlight, TouchableOpacity, View } from 'react-native';
 import { createStyleSheet, useStyles } from 'react-native-unistyles';
 import { Task } from '../../../core/type/task.ts';
 import NotChecked from '../../../assets/images/ic_task_checked_default.svg';
@@ -39,7 +32,6 @@ function TaskList({
   onMutateLike,
 }: Props): React.JSX.Element {
   const { styles } = useStyles(stylesheet);
-  const ref = useRef<FlatList<Task> | null>(null);
   const itemRenderer = useCallback(
     ({ item }: { item: Task }) => {
       return (
@@ -80,7 +72,7 @@ function TaskList({
       <Text style={styles.title}>{title}</Text>
       <View style={styles.spacer} />
       <Animated.FlatList
-        ref={ref}
+        skipEnteringExitingAnimations
         renderItem={itemRenderer}
         itemLayoutAnimation={LinearTransition.springify()}
         keyExtractor={item => item.id.toString()}

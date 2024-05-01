@@ -7,6 +7,8 @@ import HomeScreen from './feature/home/screen/HomeScreen.tsx';
 import TaskRegisterScreen from './feature/register/screen/TaskRegisterScreen.tsx';
 import DetailScreen from './feature/detail/screen/DetailScreen.tsx';
 import './core/designsystem/unistyle.ts';
+import 'react-native-reanimated';
+import 'react-native-gesture-handler';
 
 const queryClient = new QueryClient();
 const Stack = createNativeStackNavigator();
