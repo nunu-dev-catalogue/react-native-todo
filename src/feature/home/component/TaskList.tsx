@@ -1,12 +1,23 @@
-import { FlashList } from '@shopify/flash-list';
-import React, { useCallback } from 'react';
-import { Text, TouchableHighlight, TouchableOpacity, View } from 'react-native';
+import React, { useCallback, useRef } from 'react';
+import {
+  FlatList,
+  LayoutAnimation,
+  Text,
+  TouchableHighlight,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import { createStyleSheet, useStyles } from 'react-native-unistyles';
 import { Task } from '../../../core/type/task.ts';
 import NotChecked from '../../../assets/images/ic_task_checked_default.svg';
 import Checked from '../../../assets/images/ic_task_checked_done.svg';
 import Liked from '../../../assets/images/ic_liked_filled.svg';
 import NotLiked from '../../../assets/images/ic_liked_default.svg';
+import Animated, {
+  FadeInRight,
+  FadeOutRight,
+  LinearTransition,
+} from 'react-native-reanimated';
 
 type Props = {
   title: string;
@@ -28,15 +39,20 @@ function TaskList({
   onMutateLike,
 }: Props): React.JSX.Element {
   const { styles } = useStyles(stylesheet);
+  const ref = useRef<FlatList<Task> | null>(null);
   const itemRenderer = useCallback(
     ({ item }: { item: Task }) => {
       return (
-        <View style={styles.itemContainer}>
+        <Animated.View
+          style={styles.itemContainer}
+          entering={FadeInRight}
+          exiting={FadeOutRight}
+          layout={LinearTransition.springify()}>
           <View style={styles.itemHeader}>
             <TouchableHighlight
-              onPress={() =>
-                onMutateComplete({ id: item.id, completed: !item.completed })
-              }>
+              onPress={() => {
+                onMutateComplete({ id: item.id, completed: !item.completed });
+              }}>
               <View>{item.completed ? <Checked /> : <NotChecked />}</View>
             </TouchableHighlight>
             <View style={styles.itemHeaderSpacer} />
@@ -46,7 +62,7 @@ function TaskList({
             onPress={() => onMutateLike({ id: item.id, like: !item.like })}>
             <View>{item.like ? <Liked /> : <NotLiked />}</View>
           </TouchableOpacity>
-        </View>
+        </Animated.View>
       );
     },
     [
@@ -63,7 +79,13 @@ function TaskList({
     <View style={styles.listContainer}>
       <Text style={styles.title}>{title}</Text>
       <View style={styles.spacer} />
-      <FlashList renderItem={itemRenderer} data={tasks} />
+      <Animated.FlatList
+        ref={ref}
+        renderItem={itemRenderer}
+        itemLayoutAnimation={LinearTransition.springify()}
+        keyExtractor={item => item.id.toString()}
+        data={tasks}
+      />
     </View>
   );
 }
