@@ -9,7 +9,7 @@
     "start": "react-native start",
     "test": "jest",
     "pod-install": "cd ios && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install",
-    "reset": "rm -rf $TMPDIR/react-* && rm -rf $TMPDIR/metro-* && watchman watch-del-all && rm -rf node_modules && rm -rf yarn.lock && yarn cache clean && rm -rf ios/build && rm -rf ios/Pods && pod cache clean --all && rm -rf ~/.cocoapods && rm -rf android/build && yarn && yarn pod-install"
+    "reset": "rm -rf $TMPDIR/metro-* && watchman watch-del-all && rm -rf node_modules && rm -rf yarn.lock && yarn cache clean && rm -rf ios/build && rm -rf ios/Pods && pod cache clean --all && rm -rf ~/.cocoapods && rm -rf android/build && yarn && yarn pod-install"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "6.5.20",
