@@ -2955,14 +2955,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/eslint-plugin-query@npm:^5.28.11":
-  version: 5.32.1
-  resolution: "@tanstack/eslint-plugin-query@npm:5.32.1"
+"@tanstack/eslint-plugin-query@npm:5.28.11":
+  version: 5.28.11
+  resolution: "@tanstack/eslint-plugin-query@npm:5.28.11"
   dependencies:
     "@typescript-eslint/utils": "npm:^6.20.0"
   peerDependencies:
     eslint: ^8.0.0
-  checksum: 10c0/9be7a43f44be6d4ee7595e9239fc2a8072c20cf0039644431ea9f1023cf0d3a1afebfb4fc33151cf1618e213c5b3bc240d4f69fcc07471c3f49f2c3121ed99f6
+  checksum: 10c0/8324de8fc5f4651171eb0a5fb1d8c1dfdf18c12f2b666201a89b1486931731a00efeb7c5a218caa50c12f5d82c31916792a00eb1b7beb435943ffe213afdcf24
   languageName: node
   linkType: hard
 
@@ -3397,7 +3397,7 @@ __metadata:
     "@react-navigation/native-stack": "npm:6.9.26"
     "@shopify/flash-list": "npm:1.6.4"
     "@supabase/supabase-js": "npm:2.42.4"
-    "@tanstack/eslint-plugin-query": "npm:^5.28.11"
+    "@tanstack/eslint-plugin-query": "npm:5.28.11"
     "@tanstack/react-query": "npm:5.32.0"
     "@types/lodash": "npm:4.17.0"
     "@types/luxon": "npm:^3.4.2"
@@ -3412,7 +3412,7 @@ __metadata:
     prettier: "npm:2.8.8"
     react: "npm:18.3.1"
     react-native: "npm:0.74.0"
-    react-native-config: "npm:1.5.1"
+    react-native-dotenv: "npm:3.4.11"
     react-native-react-query-devtools: "npm:1.1.0"
     react-native-reanimated: "npm:3.9.0"
     react-native-safe-area-context: "npm:4.10.1"
@@ -4781,6 +4781,13 @@ __metadata:
     no-case: "npm:^3.0.4"
     tslib: "npm:^2.0.3"
   checksum: 10c0/5b859ea65097a7ea870e2c91b5768b72ddf7fa947223fd29e167bcdff58fe731d941c48e47a38ec8aa8e43044c8fbd15cd8fa21689a526bc34b6548197cd5b05
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^16.4.5":
+  version: 16.4.5
+  resolution: "dotenv@npm:16.4.5"
+  checksum: 10c0/48d92870076832af0418b13acd6e5a5a3e83bb00df690d9812e94b24aff62b88ade955ac99a05501305b8dc8f1b0ee7638b18493deb6fe93d680e5220936292f
   languageName: node
   linkType: hard
 
@@ -8694,15 +8701,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-config@npm:1.5.1":
-  version: 1.5.1
-  resolution: "react-native-config@npm:1.5.1"
+"react-native-dotenv@npm:3.4.11":
+  version: 3.4.11
+  resolution: "react-native-dotenv@npm:3.4.11"
+  dependencies:
+    dotenv: "npm:^16.4.5"
   peerDependencies:
-    react-native-windows: ">=0.61"
-  peerDependenciesMeta:
-    react-native-windows:
-      optional: true
-  checksum: 10c0/bde915ccc2c43df5e5a3f1df1c68495b598dc788cd0227d3b7a847b37fd6bbcf094a5cf9932816f7599132fa9e201c1d4db134f99e72565d20c30f69777d07ed
+    "@babel/runtime": ^7.20.6
+  checksum: 10c0/9ed4a37fb59030706d17a1cc49d05af9d8fc57dcb2ef97e122b844f3ab6f6331ebc089afac559fe5bddf37806aa282b4118005f1b27aae5e37fdc3fc8bd7625c
   languageName: node
   linkType: hard
 
