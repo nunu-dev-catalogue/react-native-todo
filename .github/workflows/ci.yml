@@ -1,0 +1,73 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-android:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Install JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: Finalize Android SDK
+        run: |
+          /bin/bash -c "yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses > /dev/null"
+
+      - name: Cache Gradle
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/wrapper
+            ~/.gradle/caches
+          key: ${{ runner.os }}-gradle-${{ hashFiles('example/android/gradle/wrapper/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      - name: Build example for Android
+        env:
+          JAVA_OPTS: "-XX:MaxHeapSize=6g"
+        run: |
+          cd android && ./gradlew assembleDebug --no-daemon --console=plain -PreactNativeArchitectures=arm64-v8a
+
+  build-ios:
+    runs-on: macos-latest
+    steps:
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: 15.3
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Cache cocoapods
+        id: cocoapods-cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            **/ios/Pods
+          key: ${{ runner.os }}-cocoapods-${{ hashFiles('example/ios/Podfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cocoapods-
+
+      - name: Install cocoapods
+        run: cd ios && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install
+
+      - name: Build example for iOS
+        run: |
+          cd ios && xcodebuild -workspace TodoList.xcworkspace -scheme TodoList -configuration Debug -sdk iphonesimulator 
