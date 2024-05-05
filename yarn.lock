@@ -3502,7 +3502,7 @@ __metadata:
     react-native-dotenv: "npm:3.4.11"
     react-native-gesture-handler: "npm:2.16.1"
     react-native-react-query-devtools: "npm:1.1.0"
-    react-native-reanimated: "npm:3.9.0"
+    react-native-reanimated: "npm:3.10.0"
     react-native-safe-area-context: "npm:4.10.1"
     react-native-screens: "npm:3.31.1"
     react-native-svg: "npm:15.2.0"
@@ -8883,9 +8883,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-reanimated@npm:3.9.0":
-  version: 3.9.0
-  resolution: "react-native-reanimated@npm:3.9.0"
+"react-native-reanimated@npm:3.10.0":
+  version: 3.10.0
+  resolution: "react-native-reanimated@npm:3.10.0"
   dependencies:
     "@babel/plugin-transform-arrow-functions": "npm:^7.0.0-0"
     "@babel/plugin-transform-nullish-coalescing-operator": "npm:^7.0.0-0"
@@ -8899,7 +8899,7 @@ __metadata:
     "@babel/core": ^7.0.0-0
     react: "*"
     react-native: "*"
-  checksum: 10c0/f4c44e1fe509b73db1587ab3a8f654ee9b3a4f0fc5b4678e2dee300fefc44a96d05a5bf57e9b5f7516724ea670af027743fd134ba90ccaa1628ad1d89169ad03
+  checksum: 10c0/8d90006f3e178e7e1d6c430432b0208df8c1eb290222bde26f535307594e53a6f6ac3fece02e69d6f3fa97dc29d2cb5fd235274c8a6aaa0f1a1b09dcc546002f
   languageName: node
   linkType: hard
 
