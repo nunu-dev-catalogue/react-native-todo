@@ -1825,7 +1825,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/core@npm:^29.6.3, @jest/core@npm:^29.7.0":
+"@jest/core@npm:^29.7.0":
   version: 29.7.0
   resolution: "@jest/core@npm:29.7.0"
   dependencies:
@@ -2013,7 +2013,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/transform@npm:^29.6.3, @jest/transform@npm:^29.7.0":
+"@jest/transform@npm:^29.7.0":
   version: 29.7.0
   resolution: "@jest/transform@npm:29.7.0"
   dependencies:
@@ -3489,10 +3489,10 @@ __metadata:
     "@types/luxon": "npm:^3.4.2"
     "@types/react": "npm:18.3.1"
     "@types/react-test-renderer": "npm:18.0.0"
-    babel-jest: "npm:29.6.3"
+    babel-jest: "npm:29.7.0"
     eslint: "npm:9.2.0"
     immer: "npm:10.1.1"
-    jest: "npm:29.6.3"
+    jest: "npm:29.7.0"
     lodash: "npm:4.17.21"
     luxon: "npm:3.4.4"
     moti: "npm:0.28.1"
@@ -3860,24 +3860,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-jest@npm:29.6.3":
-  version: 29.6.3
-  resolution: "babel-jest@npm:29.6.3"
-  dependencies:
-    "@jest/transform": "npm:^29.6.3"
-    "@types/babel__core": "npm:^7.1.14"
-    babel-plugin-istanbul: "npm:^6.1.1"
-    babel-preset-jest: "npm:^29.6.3"
-    chalk: "npm:^4.0.0"
-    graceful-fs: "npm:^4.2.9"
-    slash: "npm:^3.0.0"
-  peerDependencies:
-    "@babel/core": ^7.8.0
-  checksum: 10c0/1e5dea99427e803253970cdf54c20e2bcef8c7641f4f8712d26f242aaee368800fa004319b52778796316d0dca51d89e1c544d138bbf44cd6ef8144e53e3076d
-  languageName: node
-  linkType: hard
-
-"babel-jest@npm:^29.7.0":
+"babel-jest@npm:29.7.0, babel-jest@npm:^29.7.0":
   version: 29.7.0
   resolution: "babel-jest@npm:29.7.0"
   dependencies:
@@ -6762,7 +6745,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-cli@npm:^29.6.3":
+"jest-cli@npm:^29.7.0":
   version: 29.7.0
   resolution: "jest-cli@npm:29.7.0"
   dependencies:
@@ -7143,14 +7126,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest@npm:29.6.3":
-  version: 29.6.3
-  resolution: "jest@npm:29.6.3"
+"jest@npm:29.7.0":
+  version: 29.7.0
+  resolution: "jest@npm:29.7.0"
   dependencies:
-    "@jest/core": "npm:^29.6.3"
+    "@jest/core": "npm:^29.7.0"
     "@jest/types": "npm:^29.6.3"
     import-local: "npm:^3.0.2"
-    jest-cli: "npm:^29.6.3"
+    jest-cli: "npm:^29.7.0"
   peerDependencies:
     node-notifier: ^8.0.1 || ^9.0.0 || ^10.0.0
   peerDependenciesMeta:
@@ -7158,7 +7141,7 @@ __metadata:
       optional: true
   bin:
     jest: bin/jest.js
-  checksum: 10c0/6539f8c31d2fd4845b74302d53f65247f42c54411c12054aeed41846e56dfd967bfc76b15356aa0a52ed70acfab1a28a2b0960e2a61a514e6a3ced62384a8e35
+  checksum: 10c0/f40eb8171cf147c617cc6ada49d062fbb03b4da666cb8d39cdbfb739a7d75eea4c3ca150fb072d0d273dce0c753db4d0467d54906ad0293f59c54f9db4a09d8b
   languageName: node
   linkType: hard
 
