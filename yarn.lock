@@ -2637,10 +2637,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native/typescript-config@npm:0.74.83":
-  version: 0.74.83
-  resolution: "@react-native/typescript-config@npm:0.74.83"
-  checksum: 10c0/9dc231eb6c3432dad35cb455bd89cd7749d068fe36829fce071c18c54775ee034d65eeb7e0680f5b4cba27056d9254e6392bdf88bbfd8d2d8b6f2d547c64d48c
+"@react-native/typescript-config@npm:0.74.84":
+  version: 0.74.84
+  resolution: "@react-native/typescript-config@npm:0.74.84"
+  checksum: 10c0/63c2951a6e639219463b786e2dfe86de882391c5d35b8e305c77c9b4395d8a6b2d5940b14fc27a0338b62b20d81750a90a13452106be4bf45ba0a3b8d786c24d
   languageName: node
   linkType: hard
 
@@ -3476,7 +3476,7 @@ __metadata:
     "@react-native/babel-preset": "npm:0.74.83"
     "@react-native/eslint-config": "npm:0.74.83"
     "@react-native/metro-config": "npm:0.74.83"
-    "@react-native/typescript-config": "npm:0.74.83"
+    "@react-native/typescript-config": "npm:0.74.84"
     "@react-navigation/bottom-tabs": "npm:6.5.20"
     "@react-navigation/native": "npm:6.1.17"
     "@react-navigation/native-stack": "npm:6.9.26"
