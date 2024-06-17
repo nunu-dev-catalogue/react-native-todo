@@ -3565,7 +3565,7 @@ __metadata:
     react-native-gesture-handler: "npm:2.16.2"
     react-native-react-query-devtools: "npm:1.1.1"
     react-native-reanimated: "npm:3.12.0"
-    react-native-safe-area-context: "npm:4.10.4"
+    react-native-safe-area-context: "npm:4.10.5"
     react-native-screens: "npm:3.31.1"
     react-native-svg: "npm:15.3.0"
     react-native-svg-transformer: "npm:1.4.0"
@@ -8941,13 +8941,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-safe-area-context@npm:4.10.4":
-  version: 4.10.4
-  resolution: "react-native-safe-area-context@npm:4.10.4"
+"react-native-safe-area-context@npm:4.10.5":
+  version: 4.10.5
+  resolution: "react-native-safe-area-context@npm:4.10.5"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/7b94f6151fa1e0a483d6939d4a51c5c7f2d50afd5e4baaa755253d2dff4ac3b6d613741997d66c935e7ff0b39aff8d14ea479b2cf83fe606d10676eb213b9998
+  checksum: 10c0/b385d07ad0bd8400f957e458cf9f715312ccfe00db0c0806831a419f44fbe1eef5004c7d007156db8bc235f738880d2467d89e334ab585c682d38c0c8635c7f1
   languageName: node
   linkType: hard
 
