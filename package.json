@@ -42,7 +42,7 @@
     "@react-native/metro-config": "0.74.84",
     "@react-native/typescript-config": "0.74.84",
     "@tanstack/eslint-plugin-query": "5.43.1",
-    "@types/lodash": "4.17.5",
+    "@types/lodash": "4.17.6",
     "@types/luxon": "^3.4.2",
     "@types/react": "18.3.3",
     "@types/react-test-renderer": "18.3.0",
