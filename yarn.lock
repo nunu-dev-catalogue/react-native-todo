@@ -2684,31 +2684,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native/js-polyfills@npm:0.74.84":
-  version: 0.74.84
-  resolution: "@react-native/js-polyfills@npm:0.74.84"
-  checksum: 10c0/83dc88bd2897ebb377fb05b4dbe9779eb57b140e694849ee96462fbd024c40a4d864dccb18d6644851bf310c573e9366eaa44bdbfe7253316771fb9f61cbf89b
-  languageName: node
-  linkType: hard
-
 "@react-native/js-polyfills@npm:0.74.85":
   version: 0.74.85
   resolution: "@react-native/js-polyfills@npm:0.74.85"
   checksum: 10c0/4c0443de04fe13bd111888dfec60aa6c3e79165270d5f97fab625c11065cb04187c8269403b5de34ee6aafc21e9d300c65ee5d946ae15812cb996701b190cce8
-  languageName: node
-  linkType: hard
-
-"@react-native/metro-babel-transformer@npm:0.74.84":
-  version: 0.74.84
-  resolution: "@react-native/metro-babel-transformer@npm:0.74.84"
-  dependencies:
-    "@babel/core": "npm:^7.20.0"
-    "@react-native/babel-preset": "npm:0.74.84"
-    hermes-parser: "npm:0.19.1"
-    nullthrows: "npm:^1.1.1"
-  peerDependencies:
-    "@babel/core": "*"
-  checksum: 10c0/321510680c14d2cab86889feee0ba0c6374a5805031fd52c5bdbc69c6f7451e733715ffe9fc4e08d1fab02f9b4caf705be5c53954f89164eb881c9f490b20f18
   languageName: node
   linkType: hard
 
@@ -2726,15 +2705,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native/metro-config@npm:0.74.84":
-  version: 0.74.84
-  resolution: "@react-native/metro-config@npm:0.74.84"
+"@react-native/metro-config@npm:0.74.85":
+  version: 0.74.85
+  resolution: "@react-native/metro-config@npm:0.74.85"
   dependencies:
-    "@react-native/js-polyfills": "npm:0.74.84"
-    "@react-native/metro-babel-transformer": "npm:0.74.84"
+    "@react-native/js-polyfills": "npm:0.74.85"
+    "@react-native/metro-babel-transformer": "npm:0.74.85"
     metro-config: "npm:^0.80.3"
     metro-runtime: "npm:^0.80.3"
-  checksum: 10c0/52a97150c2bfd9b5a5545163b2b43bcab47e372ed2a66a29dcd1d9792b025c1d4de863561cfd917e6a5d51046759b45516c9e07676d0bd2e21791716ba59970a
+  checksum: 10c0/83251cdd0f8af26ec50dd70837431e72469e11b79e20bcb7192e0a1396eb2f59c210f9a1a6eee7d2b3f61544fd77bd8c711e2d4951616faecf5242921a01fa89
   languageName: node
   linkType: hard
 
@@ -3638,7 +3617,7 @@ __metadata:
     "@babel/runtime": "npm:7.24.7"
     "@react-native/babel-preset": "npm:0.74.85"
     "@react-native/eslint-config": "npm:0.74.84"
-    "@react-native/metro-config": "npm:0.74.84"
+    "@react-native/metro-config": "npm:0.74.85"
     "@react-native/typescript-config": "npm:0.74.84"
     "@react-navigation/bottom-tabs": "npm:6.6.0"
     "@react-navigation/native": "npm:6.1.17"
