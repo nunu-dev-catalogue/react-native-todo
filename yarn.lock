@@ -3636,7 +3636,7 @@ __metadata:
     "@babel/core": "npm:7.24.7"
     "@babel/preset-env": "npm:7.24.7"
     "@babel/runtime": "npm:7.24.7"
-    "@react-native/babel-preset": "npm:0.74.84"
+    "@react-native/babel-preset": "npm:0.74.85"
     "@react-native/eslint-config": "npm:0.74.84"
     "@react-native/metro-config": "npm:0.74.84"
     "@react-native/typescript-config": "npm:0.74.84"
