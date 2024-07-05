@@ -3041,32 +3041,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/eslint-plugin-query@npm:5.47.0":
-  version: 5.47.0
-  resolution: "@tanstack/eslint-plugin-query@npm:5.47.0"
+"@tanstack/eslint-plugin-query@npm:5.50.1":
+  version: 5.50.1
+  resolution: "@tanstack/eslint-plugin-query@npm:5.50.1"
   dependencies:
     "@typescript-eslint/utils": "npm:8.0.0-alpha.30"
   peerDependencies:
     eslint: ^8 || ^9
-  checksum: 10c0/450b4794ee052c31c0144644ea3cee0ee65393b9b496ce3d4be0859e3ed67de01b38737c2ca4490ee43f6884ddf2b88d217b649f9ae69354689c6a8b562e53ef
+  checksum: 10c0/bb032e2053a8b3100f9f3df5580949bf0f95e86b6b64835732d930c87c45e7b7ccc1602c5b7f2bb5d490c750c94d0534ca7f91871c2ea18960051eccc05d6dfb
   languageName: node
   linkType: hard
 
-"@tanstack/query-core@npm:5.48.0":
-  version: 5.48.0
-  resolution: "@tanstack/query-core@npm:5.48.0"
-  checksum: 10c0/7c21d91e326fdfe89077832d050cd13eac0e55796d88b6978ccc6e0d85571b22596c1f9364e2ac39a00739e1e63be559d2cf9d8faf0a954bdd25b0a55daa3311
+"@tanstack/query-core@npm:5.50.1":
+  version: 5.50.1
+  resolution: "@tanstack/query-core@npm:5.50.1"
+  checksum: 10c0/4690750e70638fbfbcb686262f129c45e06314126bc651701f9cd57a77bd05cb9dad30b68cad960c35c790982750c294c9c340d25cb8a9a0916576d2e27569c0
   languageName: node
   linkType: hard
 
-"@tanstack/react-query@npm:5.48.0":
-  version: 5.48.0
-  resolution: "@tanstack/react-query@npm:5.48.0"
+"@tanstack/react-query@npm:5.50.1":
+  version: 5.50.1
+  resolution: "@tanstack/react-query@npm:5.50.1"
   dependencies:
-    "@tanstack/query-core": "npm:5.48.0"
+    "@tanstack/query-core": "npm:5.50.1"
   peerDependencies:
     react: ^18.0.0
-  checksum: 10c0/dd4a6f9efaa4eda6767a0059da59d8a89a543d92f9f2236797f3a4dde6422b178a88c4051feac2d08bf4a469187a743330b45bf2bac53c36f5fa3459c9dd55ac
+  checksum: 10c0/ccf33245bc4f83c20b93a629e64edd9976a4d397ee51ee442326955a387345ff2b2a3813955faef6d08fde732eebb40557944df8335d50838094b703e79f35f9
   languageName: node
   linkType: hard
 
@@ -3545,8 +3545,8 @@ __metadata:
     "@react-navigation/native-stack": "npm:6.10.0"
     "@shopify/flash-list": "npm:1.7.0"
     "@supabase/supabase-js": "npm:2.44.2"
-    "@tanstack/eslint-plugin-query": "npm:5.47.0"
-    "@tanstack/react-query": "npm:5.48.0"
+    "@tanstack/eslint-plugin-query": "npm:5.50.1"
+    "@tanstack/react-query": "npm:5.50.1"
     "@types/lodash": "npm:4.17.6"
     "@types/luxon": "npm:^3.4.2"
     "@types/react": "npm:18.3.3"
