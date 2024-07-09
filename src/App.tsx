@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { DevToolsBubble } from 'react-native-react-query-devtools';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './feature/home/screen/HomeScreen.tsx';
 import TaskRegisterScreen from './feature/register/screen/TaskRegisterScreen.tsx';
@@ -27,7 +26,6 @@ function App(): React.JSX.Element {
           <Stack.Screen name={'Detail'} component={DetailScreen} />
         </Stack.Navigator>
       </NavigationContainer>
-      <DevToolsBubble />
     </QueryClientProvider>
   );
 }
