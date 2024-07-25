@@ -12,9 +12,9 @@
     "reset": "watchman watch-del-all && rm -rf node_modules && rm -rf yarn.lock && yarn cache clean && rm -rf ios/build && rm -rf ios/Pods && rm -rf ios/Podfile.lock && pod cache clean --all && rm -rf ~/.cocoapods && rm -rf android/build && touch yarn.lock && yarn install && yarn pod-install"
   },
   "dependencies": {
-    "@react-navigation/bottom-tabs": "6.6.0",
-    "@react-navigation/native": "6.1.17",
-    "@react-navigation/native-stack": "6.10.0",
+    "@react-navigation/bottom-tabs": "6.6.1",
+    "@react-navigation/native": "6.1.18",
+    "@react-navigation/native-stack": "6.11.0",
     "@shopify/flash-list": "1.7.0",
     "@supabase/supabase-js": "2.44.3",
     "@tanstack/react-query": "5.51.1",
