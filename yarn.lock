@@ -3898,7 +3898,7 @@ __metadata:
     react-native-screens: "npm:3.32.0"
     react-native-svg: "npm:15.5.0"
     react-native-svg-transformer: "npm:1.5.0"
-    react-native-unistyles: "npm:2.8.3"
+    react-native-unistyles: "npm:2.9.1"
     react-native-url-polyfill: "npm:2.0.0"
     react-test-renderer: "npm:18.3.1"
     typescript: "npm:5.5.3"
@@ -9288,9 +9288,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-unistyles@npm:2.8.3":
-  version: 2.8.3
-  resolution: "react-native-unistyles@npm:2.8.3"
+"react-native-unistyles@npm:2.9.1":
+  version: 2.9.1
+  resolution: "react-native-unistyles@npm:2.9.1"
   peerDependencies:
     "@react-native/normalize-colors": "*"
     react: "*"
@@ -9305,7 +9305,7 @@ __metadata:
       optional: true
     react-native-windows:
       optional: true
-  checksum: 10c0/de9d8401f53d27838afa55664070937900c9751efe25b9b852cd468dbc845ac9080c0a0b0d2c99dd829a62dc8febbb7f313bbbdd55d51a2084616019cf3be7d9
+  checksum: 10c0/6da05083cc4c05b7c1c4c79dba541a97b427edb2477889615d6c68ed2d4e47eb78989f4a61a955285013be7850f890237f4f9608c4b447b281eed012953e46c3
   languageName: node
   linkType: hard
 
