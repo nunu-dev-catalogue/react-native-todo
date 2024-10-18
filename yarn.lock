@@ -3263,13 +3263,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native/eslint-config@npm:0.75.2":
-  version: 0.75.2
-  resolution: "@react-native/eslint-config@npm:0.75.2"
+"@react-native/eslint-config@npm:0.75.4":
+  version: 0.75.4
+  resolution: "@react-native/eslint-config@npm:0.75.4"
   dependencies:
     "@babel/core": "npm:^7.20.0"
     "@babel/eslint-parser": "npm:^7.20.0"
-    "@react-native/eslint-plugin": "npm:0.75.2"
+    "@react-native/eslint-plugin": "npm:0.75.4"
     "@typescript-eslint/eslint-plugin": "npm:^7.1.1"
     "@typescript-eslint/parser": "npm:^7.1.1"
     eslint-config-prettier: "npm:^8.5.0"
@@ -3282,14 +3282,14 @@ __metadata:
   peerDependencies:
     eslint: ">=8"
     prettier: ">=2"
-  checksum: 10c0/fe3c2f1d5ad088e914692bc641cd641ccd471538d737e5e791e390ecb55294a405d4ba978a4ab56a4b7b7e8454e1aadeeb3c6fbef67ada758fa88c8d2ec48ff0
+  checksum: 10c0/70c0fce3b2a358e702748fe0b8e7d50c3a64c495abd52935a05c3abdb72cc2d92d9efe098d92a9370d99f3c8a0844ec5919c63ce9ed8d1845a44e7ddf3fa8f81
   languageName: node
   linkType: hard
 
-"@react-native/eslint-plugin@npm:0.75.2":
-  version: 0.75.2
-  resolution: "@react-native/eslint-plugin@npm:0.75.2"
-  checksum: 10c0/61cda967070913c02ac9626e607ec62584d9d244a046b02c5f3afc4cbbfa59dc10c3dcbda63fc2386478d5fb54ac7e5cae359aea0cdc2b50d209c380a4ebe34d
+"@react-native/eslint-plugin@npm:0.75.4":
+  version: 0.75.4
+  resolution: "@react-native/eslint-plugin@npm:0.75.4"
+  checksum: 10c0/f6fe94e58901bd01177209cf1ffd45f4b7bf191dfa8e17cd2b734bb4fbdb3000cd817ccdd5c6a19214f585c74ea709a32b4623d237a343329ad96be2d50e258a
   languageName: node
   linkType: hard
 
@@ -4247,7 +4247,7 @@ __metadata:
     "@babel/preset-env": "npm:7.25.8"
     "@babel/runtime": "npm:7.25.7"
     "@react-native/babel-preset": "npm:0.75.4"
-    "@react-native/eslint-config": "npm:0.75.2"
+    "@react-native/eslint-config": "npm:0.75.4"
     "@react-native/metro-config": "npm:0.75.4"
     "@react-native/typescript-config": "npm:0.75.2"
     "@react-navigation/bottom-tabs": "npm:6.6.1"
