@@ -3552,7 +3552,7 @@ __metadata:
     react: "npm:18.3.1"
     react-native: "npm:0.75.2"
     react-native-dotenv: "npm:3.4.11"
-    react-native-gesture-handler: "npm:2.18.1"
+    react-native-gesture-handler: "npm:2.20.0"
     react-native-reanimated: "npm:3.15.1"
     react-native-safe-area-context: "npm:4.10.9"
     react-native-screens: "npm:3.34.0"
@@ -8866,9 +8866,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-gesture-handler@npm:2.18.1":
-  version: 2.18.1
-  resolution: "react-native-gesture-handler@npm:2.18.1"
+"react-native-gesture-handler@npm:2.20.0":
+  version: 2.20.0
+  resolution: "react-native-gesture-handler@npm:2.20.0"
   dependencies:
     "@egjs/hammerjs": "npm:^2.0.17"
     hoist-non-react-statics: "npm:^3.3.0"
@@ -8877,7 +8877,7 @@ __metadata:
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/6c0f69de1f31eb92cf858903223cbe37b5a71b9e943b70a284e564507067539c5381956b0f832a874da5e1185d01a0a56f06f11ea79985973235eaf3d469274b
+  checksum: 10c0/d5780728c4d7a0966416d11f5079e5ba3ec28103fa9bc9e53a5676472bd01bc291c6b5357e5ea3c6c34743c5bf73abdadf625bdb2d8d3bb8b4b56ce699e37483
   languageName: node
   linkType: hard
 
