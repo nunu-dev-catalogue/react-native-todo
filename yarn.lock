@@ -3213,10 +3213,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native/typescript-config@npm:0.75.2":
-  version: 0.75.2
-  resolution: "@react-native/typescript-config@npm:0.75.2"
-  checksum: 10c0/1e0f7457aea1be8d2475446d51dc5e61bd871be2d33cf2716132c2a3a0dce0adb6a6a1d965404c83be20b5ea314a12e31b3178e217535779ebeefe37a5743bc8
+"@react-native/typescript-config@npm:0.75.4":
+  version: 0.75.4
+  resolution: "@react-native/typescript-config@npm:0.75.4"
+  checksum: 10c0/3c19e89f3eb330557082b54b224a1c4a4b0e5681b2367769dc9846bcf0b85de6b3b55a8d56ac07e8e7a3fee8ea8f05b45f2c8c92d557c77c994b6d9413e8a829
   languageName: node
   linkType: hard
 
@@ -4101,7 +4101,7 @@ __metadata:
     "@react-native/babel-preset": "npm:0.75.4"
     "@react-native/eslint-config": "npm:0.75.4"
     "@react-native/metro-config": "npm:0.75.4"
-    "@react-native/typescript-config": "npm:0.75.2"
+    "@react-native/typescript-config": "npm:0.75.4"
     "@react-navigation/bottom-tabs": "npm:6.6.1"
     "@react-navigation/native": "npm:6.1.18"
     "@react-navigation/native-stack": "npm:6.11.0"
@@ -4125,7 +4125,7 @@ __metadata:
     react-native: "npm:0.75.4"
     react-native-dotenv: "npm:3.4.11"
     react-native-gesture-handler: "npm:2.20.0"
-    react-native-reanimated: "npm:3.15.1"
+    react-native-reanimated: "npm:3.16.0"
     react-native-safe-area-context: "npm:4.11.1"
     react-native-screens: "npm:3.34.0"
     react-native-svg: "npm:15.6.0"
@@ -9483,9 +9483,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-reanimated@npm:3.15.1":
-  version: 3.15.1
-  resolution: "react-native-reanimated@npm:3.15.1"
+"react-native-reanimated@npm:3.16.0":
+  version: 3.16.0
+  resolution: "react-native-reanimated@npm:3.16.0"
   dependencies:
     "@babel/plugin-transform-arrow-functions": "npm:^7.0.0-0"
     "@babel/plugin-transform-class-properties": "npm:^7.0.0-0"
@@ -9502,7 +9502,7 @@ __metadata:
     "@babel/core": ^7.0.0-0
     react: "*"
     react-native: "*"
-  checksum: 10c0/d402ecc602617093cf464d315aa4c0a3e42431a9c41d027f2f2f276ec44801c668dd5c64925de8c1cd5db478908a5a62d186684c2373a27053afe47d7002fe06
+  checksum: 10c0/0d98694d7e90b0950566739666c4d58405f3e2c3355e6ed604bb0b8ae93bde3736462ec63da4ea1383836aa98db258cf6a33005542710cd302fc650abcac0d50
   languageName: node
   linkType: hard
 
