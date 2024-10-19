@@ -3727,10 +3727,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:4.17.7":
-  version: 4.17.7
-  resolution: "@types/lodash@npm:4.17.7"
-  checksum: 10c0/40c965b5ffdcf7ff5c9105307ee08b782da228c01b5c0529122c554c64f6b7168fc8f11dc79aa7bae4e67e17efafaba685dc3a47e294dbf52a65ed2b67100561
+"@types/lodash@npm:4.17.11":
+  version: 4.17.11
+  resolution: "@types/lodash@npm:4.17.11"
+  checksum: 10c0/209ab2e1ffa3328209baf0ddd782b3098df73fd84cadd44d3b2d220c09ca8ffb22257940a8db52cfc75ea542c83942c40186e01aa47781b83acde021882e428b
   languageName: node
   linkType: hard
 
@@ -4109,7 +4109,7 @@ __metadata:
     "@supabase/supabase-js": "npm:2.45.5"
     "@tanstack/eslint-plugin-query": "npm:5.59.7"
     "@tanstack/react-query": "npm:5.59.15"
-    "@types/lodash": "npm:4.17.7"
+    "@types/lodash": "npm:4.17.11"
     "@types/luxon": "npm:^3.4.2"
     "@types/react": "npm:18.3.5"
     "@types/react-test-renderer": "npm:18.3.0"
