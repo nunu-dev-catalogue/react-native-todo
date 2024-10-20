@@ -2732,12 +2732,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/postgrest-js@npm:1.16.2":
-  version: 1.16.2
-  resolution: "@supabase/postgrest-js@npm:1.16.2"
+"@supabase/postgrest-js@npm:1.16.3":
+  version: 1.16.3
+  resolution: "@supabase/postgrest-js@npm:1.16.3"
   dependencies:
     "@supabase/node-fetch": "npm:^2.6.14"
-  checksum: 10c0/9516d8fd6d820af2ef772321e8cfeeb51eb308429f8d6733248a36b906a16831a60cfe8b78b7bcb836b5b3bb8c54c13fbe79d4ad35448b9dffca56b86613567f
+  checksum: 10c0/bc84dbf90bda96d05c7887ca1d6725e2ef03a2519d299087a43001442ba047ecdda9c454cc9208d320a6ec05a77b3649232f17a82e518d1ac3a8aaaa445b193f
   languageName: node
   linkType: hard
 
@@ -2762,17 +2762,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/supabase-js@npm:2.45.5":
-  version: 2.45.5
-  resolution: "@supabase/supabase-js@npm:2.45.5"
+"@supabase/supabase-js@npm:2.45.6":
+  version: 2.45.6
+  resolution: "@supabase/supabase-js@npm:2.45.6"
   dependencies:
     "@supabase/auth-js": "npm:2.65.1"
     "@supabase/functions-js": "npm:2.4.3"
     "@supabase/node-fetch": "npm:2.6.15"
-    "@supabase/postgrest-js": "npm:1.16.2"
+    "@supabase/postgrest-js": "npm:1.16.3"
     "@supabase/realtime-js": "npm:2.10.7"
     "@supabase/storage-js": "npm:2.7.1"
-  checksum: 10c0/cc1c5ee4e1e892dd26d3866ac08d311955ba8f554ce4e0cf231f058007445f587c5c9bde4685792456d6b69a973d35fcec0b1b3fb47142f227dcd75543b98b32
+  checksum: 10c0/11dbb1a289a51a3e3f37e66ce5af2f143d9728124d02a54394303636c00fb63011f6a13d1b3f5569f69be8dc9a2c3934b2388604ca5268afe4913b75544c33e3
   languageName: node
   linkType: hard
 
@@ -3417,7 +3417,7 @@ __metadata:
     "@react-navigation/native": "npm:6.1.18"
     "@react-navigation/native-stack": "npm:6.11.0"
     "@shopify/flash-list": "npm:1.7.1"
-    "@supabase/supabase-js": "npm:2.45.5"
+    "@supabase/supabase-js": "npm:2.45.6"
     "@tanstack/eslint-plugin-query": "npm:5.59.7"
     "@tanstack/react-query": "npm:5.59.15"
     "@types/lodash": "npm:4.17.12"
