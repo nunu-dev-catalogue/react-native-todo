@@ -2673,9 +2673,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@shopify/flash-list@npm:1.7.1":
-  version: 1.7.1
-  resolution: "@shopify/flash-list@npm:1.7.1"
+"@shopify/flash-list@npm:1.7.2":
+  version: 1.7.2
+  resolution: "@shopify/flash-list@npm:1.7.2"
   dependencies:
     recyclerlistview: "npm:4.2.1"
     tslib: "npm:2.6.3"
@@ -2683,7 +2683,7 @@ __metadata:
     "@babel/runtime": "*"
     react: "*"
     react-native: "*"
-  checksum: 10c0/18b518fa91a1c55adf369fc754188b0ca4b8f083550ed7d231fd8eb93b6bb92212ae1665e4cfd51de1e94959af386b8e5f0843e8382640ae950f016d271eb6c6
+  checksum: 10c0/82c4df75afc5a3d3ca95e17e143442e8977b7fbd451e15000bd6e543b57411a5786060d48ac98b8c30b4b0c5e45537e03a33c7fd2b6775bfc385329a64164f52
   languageName: node
   linkType: hard
 
@@ -3458,7 +3458,7 @@ __metadata:
     "@react-navigation/bottom-tabs": "npm:7.2.0"
     "@react-navigation/native": "npm:7.0.14"
     "@react-navigation/native-stack": "npm:7.2.0"
-    "@shopify/flash-list": "npm:1.7.1"
+    "@shopify/flash-list": "npm:1.7.2"
     "@supabase/supabase-js": "npm:2.45.6"
     "@tanstack/eslint-plugin-query": "npm:5.59.7"
     "@tanstack/react-query": "npm:5.59.15"
