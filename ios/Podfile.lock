@@ -1308,7 +1308,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-unistyles (2.10.0):
+  - react-native-unistyles (2.20.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1596,7 +1596,7 @@ PODS:
     - React-logger (= 0.76.5)
     - React-perflogger (= 0.76.5)
     - React-utils (= 0.76.5)
-  - RNFlashList (1.7.1):
+  - RNFlashList (1.7.2):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1617,7 +1617,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNGestureHandler (2.20.0):
+  - RNGestureHandler (2.21.2):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1638,7 +1638,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNReanimated (3.16.0):
+  - RNReanimated (3.16.5):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1658,10 +1658,10 @@ PODS:
     - ReactCodegen
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
-    - RNReanimated/reanimated (= 3.16.0)
-    - RNReanimated/worklets (= 3.16.0)
+    - RNReanimated/reanimated (= 3.16.5)
+    - RNReanimated/worklets (= 3.16.5)
     - Yoga
-  - RNReanimated/reanimated (3.16.0):
+  - RNReanimated/reanimated (3.16.5):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1681,9 +1681,9 @@ PODS:
     - ReactCodegen
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
-    - RNReanimated/reanimated/apple (= 3.16.0)
+    - RNReanimated/reanimated/apple (= 3.16.5)
     - Yoga
-  - RNReanimated/reanimated/apple (3.16.0):
+  - RNReanimated/reanimated/apple (3.16.5):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1704,7 +1704,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNReanimated/worklets (3.16.0):
+  - RNReanimated/worklets (3.16.5):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1770,7 +1770,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNSVG (15.8.0):
+  - RNSVG (15.10.1):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1790,9 +1790,9 @@ PODS:
     - ReactCodegen
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
-    - RNSVG/common (= 15.8.0)
+    - RNSVG/common (= 15.10.1)
     - Yoga
-  - RNSVG/common (15.8.0):
+  - RNSVG/common (15.10.1):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2074,7 +2074,7 @@ SPEC CHECKSUMS:
   React-Mapbuffer: c174e11bdea12dce07df8669d6c0dc97eb0c7706
   React-microtasksnativemodule: 8a80099ad7391f4e13a48b12796d96680f120dc6
   react-native-safe-area-context: d6406c2adbd41b2e09ab1c386781dc1c81a90919
-  react-native-unistyles: 5025544fc1ff57fd2fa1d42315406b5f62b7c46f
+  react-native-unistyles: 0eb1afdd80a5c6a408e60fb58516d44eb7fea30c
   React-nativeconfig: f7ab6c152e780b99a8c17448f2d99cf5f69a2311
   React-NativeModulesApple: 70600f7edfc2c2a01e39ab13a20fd59f4c60df0b
   React-perflogger: ceb97dd4e5ca6ff20eebb5a6f9e00312dcdea872
@@ -2102,11 +2102,11 @@ SPEC CHECKSUMS:
   React-utils: 541c6cca08f32597d4183f00e83eef2ed20d4c54
   ReactCodegen: daa13d9e48c9bdb1daac4bd694b9dd54e06681df
   ReactCommon: a6b87a7591591f7a52d9c0fec3aa05e0620d5dd3
-  RNFlashList: 6f169ad83e52579b7754cbbcec1b004c27d82c93
-  RNGestureHandler: c374c750a0a9bacd95f5c740d146ab9428549d6b
-  RNReanimated: 19ed24de2d15be31c25737f25a065d12d6920b02
+  RNFlashList: 2af1645548006fe5e4586c8c3d7e84f060a5478f
+  RNGestureHandler: 0e5ae8d72ef4afb855e98dcdbe60f27d938abe13
+  RNReanimated: eb3170ded1ec1f61d8129c6cc2df06778f99703f
   RNScreens: 44a3e358d5ccd7815c5ae9148988c562826992b2
-  RNSVG: 536cd3c866c878faf72beaba166c8b02fe2b762b
+  RNSVG: ec2e9d524612ee95db5df143a54518c5404d93f0
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
   Yoga: c7ea4c36c1d78ebbf45529b6e78283e4e0fe4956
 
