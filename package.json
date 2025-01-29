@@ -21,7 +21,7 @@
     "immer": "10.1.1",
     "lodash": "4.17.21",
     "luxon": "3.5.0",
-    "moti": "0.29.0",
+    "moti": "0.30.0",
     "react": "19.0.0",
     "react-native": "0.77.0",
     "react-native-gesture-handler": "2.22.1",
