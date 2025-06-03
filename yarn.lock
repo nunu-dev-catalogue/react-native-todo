@@ -2652,17 +2652,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@shopify/flash-list@npm:1.7.3":
-  version: 1.7.3
-  resolution: "@shopify/flash-list@npm:1.7.3"
+"@shopify/flash-list@npm:1.8.2":
+  version: 1.8.2
+  resolution: "@shopify/flash-list@npm:1.8.2"
   dependencies:
-    recyclerlistview: "npm:4.2.1"
+    recyclerlistview: "npm:4.2.3"
     tslib: "npm:2.8.1"
   peerDependencies:
     "@babel/runtime": "*"
     react: "*"
     react-native: "*"
-  checksum: 10c0/84aa7c87f39114c98374072609ea61eec3aecee3c8dc55220f114949897b25ff6b6bc1edf14161b0feead6e6c7f3845d6b0af0d8f300df319f45e3c5f4be3e15
+  checksum: 10c0/0d0cf5164b18899fddf0d56ca55a40bdce1ee1484a180e1d57ec3405a227a04201e47389aebd5a0cd89aaaab95e72c6b8c02a9f6e6182781d7f0770341f5aee5
   languageName: node
   linkType: hard
 
@@ -3452,7 +3452,7 @@ __metadata:
     "@react-navigation/bottom-tabs": "npm:7.3.14"
     "@react-navigation/native": "npm:7.1.10"
     "@react-navigation/native-stack": "npm:7.3.14"
-    "@shopify/flash-list": "npm:1.7.3"
+    "@shopify/flash-list": "npm:1.8.2"
     "@supabase/supabase-js": "npm:2.49.9"
     "@tanstack/eslint-plugin-query": "npm:5.78.0"
     "@tanstack/react-query": "npm:5.80.2"
@@ -8880,9 +8880,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"recyclerlistview@npm:4.2.1":
-  version: 4.2.1
-  resolution: "recyclerlistview@npm:4.2.1"
+"recyclerlistview@npm:4.2.3":
+  version: 4.2.3
+  resolution: "recyclerlistview@npm:4.2.3"
   dependencies:
     lodash.debounce: "npm:4.0.8"
     prop-types: "npm:15.8.1"
@@ -8890,7 +8890,7 @@ __metadata:
   peerDependencies:
     react: ">= 15.2.1"
     react-native: ">= 0.30.0"
-  checksum: 10c0/58c2f5fa6372b31f82a1fc976ddbf9c45fa2c1a2fcaab417e39096152c4815463357ff410603db1df7dabab3a383bdef80db04c54a667bc40c5a0ce130e68961
+  checksum: 10c0/40b8b948d09f560ce98842e9141d2ce7ee5677ae2c20f7e30de901136d7764a42cc4e5ba3242fca0934055d5fef99c5b03430fcba28d7cfc27155b4ef97f70d5
   languageName: node
   linkType: hard
 
