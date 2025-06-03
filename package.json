@@ -9,7 +9,7 @@
     "start": "react-native start",
     "test": "jest",
     "pod-install": "cd ios && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install",
-    "reset": "watchman watch-del-all && rm -rf node_modules && rm -rf yarn.lock && yarn cache clean && rm -rf ios/build && rm -rf ios/Pods && rm -rf ios/Podfile.lock && pod cache clean --all && rm -rf ~/.cocoapods && rm -rf android/build && touch yarn.lock && yarn install && yarn pod-install"
+    "reset": "watchman watch-del-all && rm -rf node_modules && rm -rf yarn.lock && yarn cache clean && rm -rf ios/build && rm -rf ios/Pods && rm -rf ios/Podfile.lock && bundle exec pod cache clean --all && rm -rf ~/.cocoapods && rm -rf android/build && touch yarn.lock && yarn install && yarn pod-install"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "7.2.0",
@@ -23,7 +23,7 @@
     "luxon": "3.5.0",
     "moti": "0.30.0",
     "react": "19.1.0",
-    "react-native": "0.77.0",
+    "react-native": "0.79.2",
     "react-native-gesture-handler": "2.23.1",
     "react-native-reanimated": "3.16.7",
     "react-native-safe-area-context": "5.2.0",
@@ -39,10 +39,10 @@
     "@react-native-community/cli": "16.0.3",
     "@react-native-community/cli-platform-android": "16.0.2",
     "@react-native-community/cli-platform-ios": "16.0.2",
-    "@react-native/babel-preset": "0.77.0",
-    "@react-native/eslint-config": "0.77.0",
-    "@react-native/metro-config": "0.77.0",
-    "@react-native/typescript-config": "0.77.0",
+    "@react-native/babel-preset": "0.79.2",
+    "@react-native/eslint-config": "0.79.2",
+    "@react-native/metro-config": "0.79.2",
+    "@react-native/typescript-config": "0.79.2",
     "@tanstack/eslint-plugin-query": "5.66.1",
     "@types/jest": "^29.5.13",
     "@types/lodash": "4.17.15",
