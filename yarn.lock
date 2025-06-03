@@ -2118,15 +2118,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-community/cli-config-apple@npm:16.0.2":
-  version: 16.0.2
-  resolution: "@react-native-community/cli-config-apple@npm:16.0.2"
+"@react-native-community/cli-config-apple@npm:16.0.3":
+  version: 16.0.3
+  resolution: "@react-native-community/cli-config-apple@npm:16.0.3"
   dependencies:
-    "@react-native-community/cli-tools": "npm:16.0.2"
+    "@react-native-community/cli-tools": "npm:16.0.3"
     chalk: "npm:^4.1.2"
     execa: "npm:^5.0.0"
     fast-glob: "npm:^3.3.2"
-  checksum: 10c0/ca88b294227c6e76bf0bfe3495bdcc7106a8f4fbb4b09a019114d865ac97f5055c14c14ec9fd8397dfd0bba79db8cba870a7f807f0a37ab8688507d17068b301
+  checksum: 10c0/ac63ac8dceb96f94fe01d88c31055af175409376fda68b14561d9818ef5969de598ab81b73067d0839f33ce0f009bfb23a69f27949f8c9a544f53fb28b45d16b
   languageName: node
   linkType: hard
 
@@ -2192,16 +2192,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-community/cli-platform-apple@npm:16.0.2":
-  version: 16.0.2
-  resolution: "@react-native-community/cli-platform-apple@npm:16.0.2"
+"@react-native-community/cli-platform-apple@npm:16.0.3":
+  version: 16.0.3
+  resolution: "@react-native-community/cli-platform-apple@npm:16.0.3"
   dependencies:
-    "@react-native-community/cli-config-apple": "npm:16.0.2"
-    "@react-native-community/cli-tools": "npm:16.0.2"
+    "@react-native-community/cli-config-apple": "npm:16.0.3"
+    "@react-native-community/cli-tools": "npm:16.0.3"
     chalk: "npm:^4.1.2"
     execa: "npm:^5.0.0"
     fast-xml-parser: "npm:^4.4.1"
-  checksum: 10c0/48e868bacc409b1dc22548676b76e469bbd096e666a44aa8db6faf2b56fda34020bad28eccf251e55868fb456056c7fd925aa07715e0e58518de39ef8d63d523
+  checksum: 10c0/e66512349637a2e7badb40814ea540ba2935dc261ef569c007cedc07c12be6003ffdf3213a15e41c91c7116a9377bcfe2414b9c6ed7750a9a754c777106d1dcd
   languageName: node
   linkType: hard
 
@@ -2218,12 +2218,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-community/cli-platform-ios@npm:16.0.2":
-  version: 16.0.2
-  resolution: "@react-native-community/cli-platform-ios@npm:16.0.2"
+"@react-native-community/cli-platform-ios@npm:16.0.3":
+  version: 16.0.3
+  resolution: "@react-native-community/cli-platform-ios@npm:16.0.3"
   dependencies:
-    "@react-native-community/cli-platform-apple": "npm:16.0.2"
-  checksum: 10c0/51f6360d1dc49e65fb6adf86d9929a9d16a96ba545e37378a2c04df2f8225bf1227162c11585ab3be87026a13c8397970de367c5bcce1294e8b01d775580e079
+    "@react-native-community/cli-platform-apple": "npm:16.0.3"
+  checksum: 10c0/48ac3bb8382b29b87e0bd55279c19f27a148b1c62f5c3e26c98fe777d4c7fdc63ce66a2d2032520498a169074f6e2ebed2cd910175b29ae4983cabac27e3a05b
   languageName: node
   linkType: hard
 
@@ -2254,10 +2254,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-community/cli-tools@npm:16.0.2":
-  version: 16.0.2
-  resolution: "@react-native-community/cli-tools@npm:16.0.2"
+"@react-native-community/cli-tools@npm:16.0.3":
+  version: 16.0.3
+  resolution: "@react-native-community/cli-tools@npm:16.0.3"
   dependencies:
+    "@vscode/sudo-prompt": "npm:^9.0.0"
     appdirsjs: "npm:^1.2.4"
     chalk: "npm:^4.1.2"
     execa: "npm:^5.0.0"
@@ -2268,8 +2269,7 @@ __metadata:
     prompts: "npm:^2.4.2"
     semver: "npm:^7.5.2"
     shell-quote: "npm:^1.7.3"
-    sudo-prompt: "npm:^9.0.0"
-  checksum: 10c0/3ce77757e923e42fe9996a68a841455f2a1beda3179212855366d59e86d814bcb30a1ac6e6f2fd821ed9302ef2fbb014db9f516f4a86e1174f806b3beb600d9f
+  checksum: 10c0/1650e0047154029bae04895c279ba3957d48e9d9d4fac18cfefaf016993f4005b8586ebd394701c054213afb937aa8bb47bc4ba33447ee2d8d6065b8aac84e9c
   languageName: node
   linkType: hard
 
@@ -3444,7 +3444,7 @@ __metadata:
     "@babel/runtime": "npm:7.27.4"
     "@react-native-community/cli": "npm:18.0.0"
     "@react-native-community/cli-platform-android": "npm:18.0.0"
-    "@react-native-community/cli-platform-ios": "npm:16.0.2"
+    "@react-native-community/cli-platform-ios": "npm:16.0.3"
     "@react-native/babel-preset": "npm:0.79.2"
     "@react-native/eslint-config": "npm:0.79.2"
     "@react-native/metro-config": "npm:0.79.2"
@@ -9760,13 +9760,6 @@ __metadata:
     hey-listen: "npm:^1.0.8"
     tslib: "npm:^2.1.0"
   checksum: 10c0/a7b693269d48c0cab73da6c88eade845e71b5f330541a9ccb6a065468739d9bafdeb34f94fb89581931371275846da53e35989218cbc0c2d1a38f127e4d765fd
-  languageName: node
-  linkType: hard
-
-"sudo-prompt@npm:^9.0.0":
-  version: 9.2.1
-  resolution: "sudo-prompt@npm:9.2.1"
-  checksum: 10c0/e56793513a9c95f66367a3be2ec4c1adee84a2a62f1b7ff6453d610586dcd373d7d8f4df522a7dae03aea8b779ef7f7ba25d1130d24fb1e495cfbbc2c72c7486
   languageName: node
   linkType: hard
 
