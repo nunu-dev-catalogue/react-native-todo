@@ -2661,12 +2661,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/auth-js@npm:2.69.1":
-  version: 2.69.1
-  resolution: "@supabase/auth-js@npm:2.69.1"
+"@supabase/auth-js@npm:2.70.0":
+  version: 2.70.0
+  resolution: "@supabase/auth-js@npm:2.70.0"
   dependencies:
     "@supabase/node-fetch": "npm:^2.6.14"
-  checksum: 10c0/efc08fc6be48769efc84105617f2cb681791641ba86480d29a316ae83beac8cf4f747bf00b4947c32992f9b7b0b40e3c2bf74013f01e070c38558169ab68b6f1
+  checksum: 10c0/99696a5617dd55fa45815683fbb3d503146ab9c4d789ec746811af5df9fab3a41559c98175b8756247ccff727654f182c2038375a45d08da96cddcc740bfe717
   languageName: node
   linkType: hard
 
@@ -2697,15 +2697,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/realtime-js@npm:2.11.9":
-  version: 2.11.9
-  resolution: "@supabase/realtime-js@npm:2.11.9"
+"@supabase/realtime-js@npm:2.11.10":
+  version: 2.11.10
+  resolution: "@supabase/realtime-js@npm:2.11.10"
   dependencies:
     "@supabase/node-fetch": "npm:^2.6.13"
     "@types/phoenix": "npm:^1.6.6"
     "@types/ws": "npm:^8.18.1"
     ws: "npm:^8.18.2"
-  checksum: 10c0/24caa5bfff90884324c9a5a78203b161853d0ed9f5ba1fa8ca5817ac6e2c60c8e846b146e223cb3abcc899632efc517646e616d1ae09fd30c6945740a32e98e6
+  checksum: 10c0/948dfec5bf57049f0fe7fb2a91c71e6b863714c6a312e0db2b043735161d1a7996853b899c40a651b42000876e235d3960a32e5a96f40b8b5717e8cec3508670
   languageName: node
   linkType: hard
 
@@ -2718,17 +2718,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/supabase-js@npm:2.49.9":
-  version: 2.49.9
-  resolution: "@supabase/supabase-js@npm:2.49.9"
+"@supabase/supabase-js@npm:2.50.0":
+  version: 2.50.0
+  resolution: "@supabase/supabase-js@npm:2.50.0"
   dependencies:
-    "@supabase/auth-js": "npm:2.69.1"
+    "@supabase/auth-js": "npm:2.70.0"
     "@supabase/functions-js": "npm:2.4.4"
     "@supabase/node-fetch": "npm:2.6.15"
     "@supabase/postgrest-js": "npm:1.19.4"
-    "@supabase/realtime-js": "npm:2.11.9"
+    "@supabase/realtime-js": "npm:2.11.10"
     "@supabase/storage-js": "npm:2.7.1"
-  checksum: 10c0/bc247e77e21fe39bf5fe22ba8a2f53c2a0aa6d43430f18fd2282a43041e0ebd101b389c92ab7821618ad8b05a08fad7e8170001f44d830dc396c60ac4055c64a
+  checksum: 10c0/42a1ba0bc4a902114cdb357fa194e20d67c52903b831543f67ee406ac51aba58bc9b33c0950d7c1fcaa561ebd9128fc02b04385add6a12816fd0668da5c50aa2
   languageName: node
   linkType: hard
 
@@ -3400,7 +3400,7 @@ __metadata:
     "@react-navigation/native": "npm:7.1.10"
     "@react-navigation/native-stack": "npm:7.3.14"
     "@shopify/flash-list": "npm:1.8.2"
-    "@supabase/supabase-js": "npm:2.49.9"
+    "@supabase/supabase-js": "npm:2.50.0"
     "@tanstack/eslint-plugin-query": "npm:5.78.0"
     "@tanstack/react-query": "npm:5.80.2"
     "@types/jest": "npm:^29.5.13"
