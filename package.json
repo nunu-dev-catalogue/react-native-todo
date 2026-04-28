@@ -19,7 +19,7 @@
     "@supabase/supabase-js": "2.49.9",
     "@tanstack/react-query": "5.80.2",
     "immer": "10.1.1",
-    "lodash": "4.17.21",
+    "lodash": "4.18.1",
     "luxon": "3.6.1",
     "moti": "0.30.0",
     "react": "19.1.0",
