@@ -8,4 +8,4 @@ ruby ">= 2.6.10"
 gem 'cocoapods', '>= 1.16.2'
 gem 'activesupport', '>= 7.2.2.1'
 gem 'xcodeproj', '< 1.27.1'
-gem 'concurrent-ruby', '< 1.3.6'
+gem 'concurrent-ruby', '< 1.3.8'
