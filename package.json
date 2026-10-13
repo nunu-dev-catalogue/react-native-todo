@@ -33,7 +33,7 @@
     "react-native-url-polyfill": "2.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.27.4",
+    "@babel/core": "7.29.6",
     "@babel/preset-env": "7.27.2",
     "@babel/runtime": "7.27.4",
     "@react-native-community/cli": "18.0.0",
